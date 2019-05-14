@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>loginform</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Registrationform</display-name>
+    <servlet-name>Registrationform</servlet-name>
+    <servlet-class>com.login.Registrationform</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registrationform</servlet-name>
+    <url-pattern>/Registrationform</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Check</display-name>
+    <servlet-name>Check</servlet-name>
+    <servlet-class>com.priya.controller.Check</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Check</servlet-name>
+    <url-pattern>/Check</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>You</display-name>
+    <servlet-name>You</servlet-name>
+    <servlet-class>com.priya.controller.You</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>You</servlet-name>
+    <url-pattern>/You</url-pattern>
+  </servlet-mapping>
+</web-app>
